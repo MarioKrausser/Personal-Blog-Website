@@ -53,7 +53,7 @@ box-sizing: border-box;
     background-color: #A62C21;
 }
 
-#header {
+#hd {
     grid-area: hd;
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ box-sizing: border-box;
     background-image: url("../img/sky-header.jpg");
 }
 
-#header > h1 {
+#hd > h1 {
     font-size: 45px;
 }
 
