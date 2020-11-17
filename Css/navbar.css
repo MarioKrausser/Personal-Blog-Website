@@ -1,0 +1,22 @@
+/* There are the codes for the navbar styles */
+
+#navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3D3F45;
+}
+
+#navbar > #navbarList {
+    margin-right: 50px;
+}
+
+#navbar #navbarList > .navbarLinks {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#navbar .active {
+    background-color: #A62C21;
+}

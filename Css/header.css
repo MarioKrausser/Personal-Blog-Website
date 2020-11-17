@@ -1,0 +1,19 @@
+/* There are the codes for the header styles */
+
+#hd {
+    grid-area: hd;
+}
+
+#hd > #headerImg {
+    margin: 0;
+}
+
+#hd > #headerImg > .image {
+    width: 100vw;
+    min-height: 150px;
+}
+
+#hd > h1 {
+    font-size: 45px;
+    text-align: center;
+}

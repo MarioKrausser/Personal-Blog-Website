@@ -1,12 +1,18 @@
 /* FARBEN */
 /*
-Blau: #1F4E8C
-Dunkelgrau: #3D3F45
-Hellgrau: #E5E5E5
-Rot: #A62C21
+blue: #1F4E8C
+darkgrey: #3D3F45
+grey: #E5E5E5
+red: #A62C21
 */
 
 /* mobile first version */
+
+@import "navbar.css";
+
+@import "header.css";
+
+@import "footer.css";
 
 body {
     margin: 0;
@@ -22,45 +28,12 @@ box-sizing: border-box;
 #container {
     display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: 7% 15% 1fr 8%;
+    grid-template-rows: 5% 10% 1fr 8%;
     grid-template-areas: 
         "nav"
         "hd" 
         "main"
         "ft";
-}
-
-#navbar {
-    grid-area: nav;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3D3F45;
-}
-
-#navbar > ul {
-    margin-right: 50px;
-}
-
-#navbar ul > li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-#navbar .active {
-    background-color: #A62C21;
-}
-
-#hd {
-    grid-area: hd;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url("../img/sky-header.jpg");
-}
-
-#hd > h1 {
-    font-size: 45px;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -102,24 +75,14 @@ section#content a:active {
 }
 
 
-footer#ft {
-    grid-area: ft;
-    background-color: #3D3F45;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-}
-
-footer > a:link {
-    padding: 50px 10px;
-}
-
-
 @media (min-width: 480px) {
     
     #container {
-        grid-template-rows: 8% 24% 1fr 9%;
+        grid-template-rows: 8% 10% 1fr 9%;
+    }
+
+    #hd > #headerImg > .image {
+        min-height: 200px;
     }
 
     a:link, a:visited, a:hover, a:active {
@@ -130,7 +93,7 @@ footer > a:link {
 @media (min-width: 768px) {
 
     #container {
-        grid-template-rows: 10% 30% 1fr 12%;
+        grid-template-rows: 10% 25% 1fr 12%;
     }
        
     section#content {
@@ -147,6 +110,27 @@ footer > a:link {
 @media (min-width: 1200px) {
     
     #container {
-        grid-template-rows: 12% 39% 75% 15%;
+        grid-template-rows: 12% 25% 75% 15%;
+    }   
+}
+
+@media (min-width: 1400px) {
+    
+    #container {
+        grid-template-rows: 12% 30% 75% 15%;
+    }   
+}
+
+@media (min-width: 1400px) {
+    
+    #container {
+        grid-template-rows: 12% 30% 75% 15%;
+    }   
+}
+
+@media (min-width: 1920px) {
+    
+    #container {
+        grid-template-rows: 12% 37% 75% 15%;
     }   
 }
